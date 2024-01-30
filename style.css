@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift");
+
+@font-face {
+  font-family: "SquareFont";
+  src: url("./fonts/squarefont/SquareFont.ttf.woff") format("woff"),
+    url("./fonts/squarefont/SquareFont.ttf.svg#SquareFont") format("svg"),
+    url("./fonts/squarefont/SquareFont.ttf.eot"),
+    url("./fonts/squarefont/SquareFont.ttf.eot?#iefix")
+      format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: none;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.ditc {
+  letter-spacing: -0.64px;
+}
+
+.presents {
+  transform: translateY(-10px);
+  font-weight: 100;
+}
+
+#sec2,
+#sec6 {
+  background-image: url("./public/bg_blur1.svg");
+  background-position: center;
+}
+
+#sec4 {
+  background-image: url("./public/bg_blur2.svg");
+  background-position: center;
+}
+
+#copyright {
+  color: #359179;
+  opacity: 0.7;
+}
+
+#apply:hover {
+  transition: all 0.2s ease-in-out !important;
+  border: 1px solid #0c443b !important;
+  background: #0c443b !important;
+  box-shadow: 0px 0px 7.6px 0px #061d20 inset !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+#arrows {
+  transform: translateY(-55px);
+}
+
+section div img {
+  overflow: hidden;
+}
+
+/* APPLY PAGE */
+
+.sticky-image {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  height: 485px;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.sticky-image:first-child {
+  background-position: left;
+}
+
+.sticky-image:last-child {
+  background-position: right;
+}
+
+.content {
+  border-radius: 2px;
+  background: rgba(5, 20, 25, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+nav {
+  background: rgba(5, 20, 25, 0.8);
+  box-shadow: 0px 4px 43.3px -16px #35917a;
+  backdrop-filter: blur(4px);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 1px;
+  background-color: var(--text);
+  display: block;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+
+.hamburger-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.hamburger-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+
+.hamburger-active .line:nth-child(3) {
+  transform: translateY(-5px) rotate(90deg);
+}
+
+.menubar {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  height: 100vh;
+  padding: 20% 0;
+  background: rgba(255, 255, 255);
+  transition: all 0.5s ease-in;
+  z-index: 2;
+}
+
+.menubar.active {
+  left: 0;
+}
+
+.menubar {
+  background-color: var(--sec-bg);
+}
+
+.menubar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.menubar ul li {
+  margin-bottom: 32px;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 95%;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menubar ul li a:hover {
+  color: var(--light-green);
+}
+
+@media screen and (max-width: 790px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav .logo-rt {
+    display: none;
+  }
+}
