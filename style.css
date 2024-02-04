@@ -20,9 +20,17 @@ html {
 }
 
 body {
-  cursor: none;
+  cursor: default;
   backface-visibility: hidden;
   transform-style: preserve-3d;
+}
+
+.hero {
+  height: calc(100vh - 130px);
+}
+
+#sjij-logo {
+  transform: translateY(-100px);
 }
 
 @media (max-width: 767px) {
@@ -36,7 +44,7 @@ body {
   }
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -87,7 +95,7 @@ body {
 
 .logo-visible {
   opacity: 1;
-}
+} */
 
 .ditc {
   letter-spacing: -0.64px;
@@ -100,7 +108,9 @@ body {
 
 #sec2,
 #sec4,
-#sec6 {
+#sec6,
+#sec8,
+#sec10 {
   background-image: url("./public/bg_blur1.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -120,6 +130,12 @@ body {
   backdrop-filter: blur(5px) !important;
 }
 
+/* #fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+} */
+
 #arrows {
   transform: translateY(-55px);
 }
@@ -134,26 +150,6 @@ prizes-div {
 
 /* APPLY PAGE */
 
-.sticky-image {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  height: 485px;
-  width: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.1;
-}
-
-.sticky-image:first-child {
-  background-position: left;
-}
-
-.sticky-image:last-child {
-  background-position: right;
-}
-
 .content {
   border-radius: 2px;
   background: rgba(5, 20, 25, 0.5);
@@ -166,8 +162,8 @@ ol {
 
 nav {
   background: rgba(5, 20, 25, 0.8);
-  box-shadow: 0px 4px 43.3px -16px #35917a;
-  backdrop-filter: blur(4px);
+  /* box-shadow: 0px 4px 43.3px -16px #35917a;
+  backdrop-filter: blur(4px); */
 }
 
 .hamburger {
