@@ -25,6 +25,17 @@ body {
   transform-style: preserve-3d;
 }
 
+@media (max-width: 767px) {
+  body {
+    cursor: default;
+  }
+
+  cursor-dot-outline,
+  cursor-dot {
+    display: none;
+  }
+}
+
 .ditc {
   letter-spacing: -0.64px;
 }
@@ -35,16 +46,12 @@ body {
 }
 
 #sec2,
+#sec4,
 #sec6 {
   background-image: url("./public/bg_blur1.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#sec4 {
-  background-image: url("./public/bg_blur2.svg");
-  background-position: center;
 }
 
 #copyright {
@@ -66,6 +73,10 @@ body {
 
 section div img {
   overflow: hidden;
+}
+
+prizes-div {
+  align-self: center;
 }
 
 /* APPLY PAGE */
