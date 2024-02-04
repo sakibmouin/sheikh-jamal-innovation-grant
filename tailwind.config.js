@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: "#051419",
-        green: "#0C443B",
+        blue: "#181E25",
+        green: "#38917A",
         white: "#FFFFFF",
         green2: "#35635C",
         green3: "#5D827C",
@@ -13,6 +13,7 @@ module.exports = {
     },
     fontFamily: {
       bahn: ["Bahnschrift", "sans-serif"],
+      dm: ["DM Sans", "sans-serif"],
       bebasneue: ["Bebas Neue", "sans-serif"],
       square: ["SquareFont", "sans-serif"],
       serif: ["ui-serif", "Georgia"],

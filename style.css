@@ -25,9 +25,9 @@ body {
   transform-style: preserve-3d;
 }
 
-.hero {
+/* .hero {
   height: calc(100vh - 130px);
-}
+} */
 
 #sjij-logo {
   transform: translateY(-100px);
@@ -106,15 +106,19 @@ body {
   font-weight: 100;
 }
 
-#sec2,
-#sec4,
-#sec6,
-#sec8,
-#sec10 {
-  background-image: url("./public/bg_blur1.svg");
-  background-position: center;
+#sec1,
+#sec3,
+#sec5,
+#sec7 {
+  background-color: #181e25;
+  background-image: url(/public/triangle.png);
+  background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100px, cover;
+}
+
+#sec9 {
+  background-color: #181e25;
 }
 
 #copyright {
@@ -150,21 +154,21 @@ prizes-div {
 
 /* APPLY PAGE */
 
-.content {
+/* .content {
   border-radius: 2px;
   background: rgba(5, 20, 25, 0.5);
   backdrop-filter: blur(6px);
-}
+} */
 
 ol {
   list-style-type: decimal;
 }
 
-nav {
+/* nav {
   background: rgba(5, 20, 25, 0.8);
-  /* box-shadow: 0px 4px 43.3px -16px #35917a;
-  backdrop-filter: blur(4px); */
-}
+  box-shadow: 0px 4px 43.3px -16px #35917a;
+  backdrop-filter: blur(4px);
+} */
 
 .hamburger {
   display: none;
