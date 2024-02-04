@@ -27,48 +27,97 @@
       rel="stylesheet"
     />
     <link href="./output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./cursor.css" />
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body class="bg-white text-white font-dm">
     <!-- Header Section -->
-    <!-- <header id="header"></header> -->
-    <header id="header" class="bg-blue">
+    <header id="header" class="z-10">
       <nav
-        class="py-[40px] px-[40px] flex justify-between items-center font-bahn uppercase"
+        class="py-[15px] px-[80px] flex justify-between items-center font-dm text-[18px] bg-blue"
       >
         <div class="flex items-center">
-          <img
-            id="navbar-logo"
-            class="h-[130px] w-auto"
-            src="./public/Drmc_logo.png"
-            alt="Sheikh Jamal Innovation Grant
-            Logo"
-          />
+          <a href="https://drmcitclub.com/" target="_blank">
+            <img
+              id="navbar-logo"
+              class="h-[70px] w-auto"
+              src="./public/DITC_logo.png"
+              alt="Sheikh Jamal Innovation Grant
+          Logo"
+            />
+          </a>
         </div>
-        <!-- <ul>
+        <ul class="list-none flex gap-5">
           <li>
-            <a href="/sheikh-jamal-innovation-grant">Home</a>
+            <a href="https://drmcitclub.com/">Home</a>
           </li>
-        </ul> -->
-        <img
-          id="navbar-logo"
-          class="h-[100px] w-auto"
-          src="./public/DITC_logo.png"
-          alt="Sheikh Jamal Innovation Grant
-            Logo"
-        />
+          <li>
+            <a href="https://drmcitclub.com/achievements">Achievements</a>
+          </li>
+          <li>
+            <a href="https://drmcitclub.com/gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="https://drmcitclub.com/publications">Publications</a>
+          </li>
+          <li>
+            <a href="https://drmcitclub.com/events">Events</a>
+          </li>
+          <li>
+            <a href="/sheikh-jamal-innovation-grant" class="active dropdown"
+              >Innovation Grant</a
+            >
+          </li>
+          <li>
+            <a href="https://drmcitclub.com/executives">Executives</a>
+          </li>
+          <li>
+            <a href="https://drmcitclub.com/contact">Contact us</a>
+          </li>
+        </ul>
+        <div>
+          <a
+            id="apply"
+            href="./apply"
+            target="_blank"
+            class="px-3 py-2 bg-black shadow-inner border border-green backdrop-blur-[10px] text-green text-xl font-bold font-dm uppercase"
+          >
+            Apply Now
+          </a>
+        </div>
         <div class="hamburger">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
         </div>
       </nav>
-      <div class="menubar uppercase">
-        <ul>
+      <div class="menubar">
+        <ul class="list-none flex gap-5">
           <li>
-            <a href="/sheikh-jamal-innovation-grant">Home</a>
+            <a href="https://drmcitclub.com/">Home</a>
+          </li>
+          <li>
+            <a href="https://drmcitclub.com/achievements">Achievements</a>
+          </li>
+          <li>
+            <a href="https://drmcitclub.com/gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="https://drmcitclub.com/publications">Publications</a>
+          </li>
+          <li>
+            <a href="https://drmcitclub.com/events">Events</a>
+          </li>
+          <li>
+            <a href="/sheikh-jamal-innovation-grant" class="active"
+              >Innovation Grant</a
+            >
+          </li>
+          <li>
+            <a href="https://drmcitclub.com/executives">Executives</a>
+          </li>
+          <li>
+            <a href="https://drmcitclub.com/contact">Contact us</a>
           </li>
         </ul>
       </div>
@@ -77,7 +126,7 @@
     <!-- Section 1: Landing -->
     <section
       id="sec1"
-      class="hero flex w-full justify-center py-10 border-b-2 md:border-b-0"
+      class="hero flex w-full justify-center py-24 border-b-2 md:border-b-0"
     >
       <div
         class="sec1container flex flex-wrap justify-center flex-col items-center"
@@ -89,7 +138,7 @@
             src="./public/sjij-logo.svg"
             alt="Sheikh Jamal Innovation Grant
         Logo"
-            class="block md:h-[400px] scaleup"
+            class="block md:h-[370px] scaleup"
             draggable="false"
             loading="lazy"
           />
@@ -133,7 +182,7 @@
 
     <section
       id="sec3"
-      class="flex justify-center items-center py-10 text-white"
+      class="flex flex-col justify-center items-center py-10 text-white"
     >
       <!-- Container for content -->
       <div class="content flex flex-col gap-5 justify-between mx-72 py-10">
@@ -147,6 +196,29 @@
           environment, aligning with the visionary aspirations of Sheikh Jamal,
           the son of Bangabandhu Sheikh Mujibur Rahman, for a smart and
           prosperous Bangladesh.
+        </div>
+      </div>
+      <div class="content flex flex-col gap-5 justify-between mx-72 py-10">
+        <div class="text-left text-[40px] font-normal font-square uppercase">
+          ROADMAP
+        </div>
+        <div class="flex flex-col justify-center gap-10">
+          <div class="text-base font-normal">
+            From idea submission to the Gala Event, the Sheikh Jamal Innovation
+            Grant roadmap is a concise journey. Participants submit ideas,
+            undergo promotion, engage in dynamic pitching, face meticulous
+            judging, and culminate in the Gala Event where the top startup
+            claims the coveted grant. This straightforward path mirrors the
+            essence of innovation, echoing Sheikh Jamal's legacy in the
+            entrepreneurial landscape.
+          </div>
+          <div>
+            <img
+              src="./public/roadmap-vertical.png"
+              alt=""
+              class="max-h-[350px]"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -168,36 +240,6 @@
           industry in Bangladesh. Join us in fostering a culture of innovation
           and entrepreneurship – submit your application and be a part of
           shaping the future of technology in our country.
-        </div>
-      </div>
-    </section>
-
-    <section
-      id="sec5"
-      class="flex justify-center items-center py-10 text-white"
-    >
-      <!-- Container for content -->
-      <div class="content flex flex-col gap-5 justify-between mx-72 py-10">
-        <div class="text-left text-[40px] font-normal font-square uppercase">
-          ROADMAP
-        </div>
-        <div class="flex flex-col justify-center gap-10">
-          <div class="text-base font-normal">
-            From idea submission to the Gala Event, the Sheikh Jamal Innovation
-            Grant roadmap is a concise journey. Participants submit ideas,
-            undergo promotion, engage in dynamic pitching, face meticulous
-            judging, and culminate in the Gala Event where the top startup
-            claims the coveted grant. This straightforward path mirrors the
-            essence of innovation, echoing Sheikh Jamal's legacy in the
-            entrepreneurial landscape.
-          </div>
-          <div>
-            <img
-              src="./public/roadmap-vertical.png"
-              alt=""
-              class="min-h-[350px]"
-            />
-          </div>
         </div>
       </div>
     </section>
@@ -226,10 +268,9 @@
           prize, will be selected by the knowledgeable panel of judges.<br />
         </div>
         <div class="text-2xl font-bold capitalize">
-          Submission Starts > Campaign & Promotion > Submission Ends > Pre
-          Pitching Screening > Pitching > Primary Selection > Boot camp > Top 51
-          Startups Selection > Final Pitching > Winners announcement for SHEIKH
-          JAMAL INNOVATION GRANT 2024
+          Submission Starts > Promotion > Submission Ends > Pitching > Primary
+          Selection > Top 11 Startups Selection > Final Pitching > Winners
+          announcement for SHEIKH JAMAL INNOVATION GRANT 2024
         </div>
       </div>
     </section>
@@ -421,7 +462,7 @@
         class="bg-green bg-opacity-30 flex flex-col justify-center items-center py-3 md:py-5"
       >
         <div
-          class="text-[18px] md:text-[40px] font-bold pb-3 md:pb-5 uppercase tracking-[4px]"
+          class="text-[18px] md:text-[40px] font-square font-bold pb-3 md:pb-5 uppercase tracking-[4px]"
         >
           Sheikh Jamal Innovation Grant
         </div>
@@ -480,77 +521,7 @@
     <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div>
 
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!-- SCRIPTS -->
-    <!-- right click disabler -->
-    <script>
-      var images = document.getElementsByTagName("img");
-      for (var i = 0; i < images.length; i++) {
-        images[i].addEventListener("contextmenu", function (e) {
-          e.preventDefault();
-        });
-      }
-    </script>
-
-    <!-- Image animation loading script -->
-    <script>
-      let imagesLoaded = 0;
-      const totalImages = 3; // Number of images to wait for
-      const logo1 = document.getElementById("drmcitc-logo");
-      const logo2 = document.getElementById("drmc-logo");
-      const logo3 = document.getElementById("sjig-logo");
-
-      function imageLoaded() {
-        imagesLoaded++;
-        if (imagesLoaded === totalImages) {
-          // Make the logo visible and start the animation
-          logo1.classList.add("logo-visible");
-          logo2.classList.add("logo-visible");
-          logo3.classList.add("logo-visible");
-        }
-      }
-
-      // Attach load event listeners to images
-      document
-        .getElementById("drmcitc-logo")
-        .addEventListener("load", imageLoaded);
-      document
-        .getElementById("drmc-logo")
-        .addEventListener("load", imageLoaded);
-      document
-        .getElementById("sjij-logo")
-        .addEventListener("load", imageLoaded);
-    </script>
-
-    <script>
-      // Function to load the cursor script
-      function loadCursorScript() {
-        var script = document.createElement("script");
-        script.src = "./cursor.js";
-        document.body.appendChild(script);
-      }
-
-      // Function to check screen size and load the script accordingly
-      function checkScreenSizeAndLoadScript() {
-        if (window.matchMedia("(min-width: 768px)").matches) {
-          loadCursorScript();
-        } else {
-          var existingScript = document.querySelector(
-            'script[src="./cursor.js"]'
-          );
-          if (existingScript) {
-            existingScript.remove();
-          }
-        }
-      }
-
-      // Load the script initially if the screen is large enough
-      checkScreenSizeAndLoadScript();
-
-      // Listen for resize events to update the script loading
-      window.addEventListener("resize", checkScreenSizeAndLoadScript);
-    </script>
+    <!-- Script -->
+    <script src="index.js"></script>
   </body>
 </html>

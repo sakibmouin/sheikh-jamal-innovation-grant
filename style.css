@@ -15,6 +15,14 @@
   font-style: normal;
 }
 
+:root {
+  --blue: #181e25;
+  --green: #38917a;
+  --white: #ffffff;
+  --green2: #35635c;
+  --green3: #5d827c;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -29,9 +37,9 @@ body {
   height: calc(100vh - 130px);
 } */
 
-#sjij-logo {
+/* #sjij-logo {
   transform: translateY(-100px);
-}
+} */
 
 @media (max-width: 767px) {
   body {
@@ -110,19 +118,23 @@ body {
 #sec3,
 #sec5,
 #sec7 {
-  background-color: #181e25;
-  background-image: url(/public/triangle.png);
+  background-color: var(--blue);
+  background-image: url(./public/triangle.png);
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 100px, cover;
 }
 
 #sec9 {
-  background-color: #181e25;
+  background-color: var(--blue);
+  background-image: url(./public/footer-bg.svg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 500px, cover;
 }
 
 #copyright {
-  color: #359179;
+  color: var(--green);
   opacity: 0.7;
 }
 
@@ -170,6 +182,23 @@ ol {
   backdrop-filter: blur(4px);
 } */
 
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 95%;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  color: var(--green);
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -181,11 +210,11 @@ ol {
   background-color: var(--text);
   display: block;
   margin: 7px auto;
-  transition: all 0.3s ease-in forwards-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .hamburger-active {
-  transition: all 0.3s ease-in forwards-out;
+  transition: all 0.3s ease-in-out;
   transition-delay: 0.6s;
   transform: rotate(45deg);
 }
@@ -218,8 +247,12 @@ ol {
   height: 100vh;
   padding: 20% 0;
   background: rgba(255, 255, 255);
-  transition: all 0.5s ease-in forwards;
+  transition: all 0.5s ease-in;
   z-index: 2;
+}
+
+.active {
+  color: var(--green);
 }
 
 .menubar.active {
@@ -252,6 +285,14 @@ ol {
   color: var(--light-green);
 }
 
+.hero-bg {
+  max-width: 100%;
+}
+
+/* .footer {
+  background-color: var(--green);
+} */
+
 @media screen and (max-width: 790px) {
   .hamburger {
     display: block;
@@ -264,4 +305,76 @@ ol {
   nav .logo-rt {
     display: none;
   }
+}
+
+#innovationGrantDropdown {
+  min-width: 200px; /* Adjust the width as needed */
+}
+
+#innovationGrantDropdown.active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1) translateX(5px);
+}
+
+#innovationGrantDropdown ul {
+  padding: 1.2rem;
+  font-size: 0.95rem;
+}
+
+#innovationGrantDropdown .dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.15rem;
+}
+
+#innovationGrantDropdown .dropdown-link {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-radius: 7px;
+  transition: 0.1s ease-in-out;
+}
+
+#innovationGrantDropdown .dropdown-link p {
+  font-size: 0.8rem;
+  color: var(--medium-grey);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Cursor */
+html,
+body,
+html *,
+body * {
+  cursor: none;
+}
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  mix-blend-mode: difference;
+}
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #eb3b23;
+}
+.cursor-dot-outline {
+  width: 40px;
+  height: 40px;
+  background-color: #eb3a235a;
 }
