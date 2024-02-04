@@ -38,6 +38,8 @@ body {
 #sec6 {
   background-image: url("./public/bg_blur1.svg");
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #sec4 {
