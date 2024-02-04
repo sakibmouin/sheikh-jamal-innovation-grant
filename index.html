@@ -42,35 +42,38 @@
         <!-- Logos -->
         <div class="flex justify-center mb-3 items-center gap-[53px]">
           <img
+            id="drmcitc-logo"
             src="./public/DITC_logo.png"
             alt="DRMC IT Club Logo"
-            class="line-block h-[65px]"
+            class="line-block h-[65px] fadein"
             draggable="false"
             loading="lazy"
           />
           <img
+            id="drmc-logo"
             src="./public/Drmc_logo.png"
             alt="Dhaka Residential Model College
           Logo"
-            class="line-block h-[90px]"
+            class="line-block h-[90px] fadein"
             draggable="false"
             loading="lazy"
           />
         </div>
         <!-- Club Name -->
-        <div class="block text-center font-bebasneue text-[64px] ditc">
+        <div class="block text-center font-bebasneue text-[64px] ditc fadein">
           DRMC IT CLUB
         </div>
         <!-- Presents Text -->
-        <div class="presents block text-center text-xl text-green3">
+        <div class="presents block text-center text-xl text-green3 slideup">
           presents
         </div>
         <!-- Grant Logo -->
         <img
+          id="sjij-logo"
           src="./public/sjij-logo.svg"
           alt="Sheikh Jamal Innovation Grant
         Logo"
-          class="block md:h-[172px]"
+          class="block md:h-[172px] scaleup"
           draggable="false"
           loading="lazy"
         />
@@ -376,6 +379,36 @@
           e.preventDefault();
         });
       }
+    </script>
+
+    <!-- Image animation loading script -->
+    <script>
+      let imagesLoaded = 0;
+      const totalImages = 3; // Number of images to wait for
+      const logo1 = document.getElementById("drmcitc-logo");
+      const logo2 = document.getElementById("drmc-logo");
+      const logo3 = document.getElementById("sjig-logo");
+
+      function imageLoaded() {
+        imagesLoaded++;
+        if (imagesLoaded === totalImages) {
+          // Make the logo visible and start the animation
+          logo1.classList.add("logo-visible");
+          logo2.classList.add("logo-visible");
+          logo3.classList.add("logo-visible");
+        }
+      }
+
+      // Attach load event listeners to images
+      document
+        .getElementById("drmcitc-logo")
+        .addEventListener("load", imageLoaded);
+      document
+        .getElementById("drmc-logo")
+        .addEventListener("load", imageLoaded);
+      document
+        .getElementById("sjij-logo")
+        .addEventListener("load", imageLoaded);
     </script>
 
     <script>

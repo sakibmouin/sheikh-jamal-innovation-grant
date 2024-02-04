@@ -578,6 +578,10 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1023,6 +1027,62 @@ body {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadein {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slideup {
+  animation: slideUp 0.8s ease-in forwards;
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scaleup {
+  animation: scaleUp 1s ease-in forwards;
+}
+
+#drmcitc-logo,
+#drmc-logo,
+#sjig-logo {
+  opacity: 0;
+}
+
+.logo-visible {
+  opacity: 1;
+}
+
 .ditc {
   letter-spacing: -0.64px;
 }
@@ -1047,7 +1107,7 @@ body {
 }
 
 #apply:hover {
-  transition: all 0.2s ease-in-out !important;
+  transition: all 0.2s ease-in forwards-out !important;
   border: 1px solid #0c443b !important;
   background: #0c443b !important;
   box-shadow: 0px 0px 7.6px 0px #061d20 inset !important;
@@ -1118,11 +1178,11 @@ nav {
   background-color: var(--text);
   display: block;
   margin: 7px auto;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in forwards-out;
 }
 
 .hamburger-active {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in forwards-out;
   transition-delay: 0.6s;
   transform: rotate(45deg);
 }
@@ -1155,7 +1215,7 @@ nav {
   height: 100vh;
   padding: 20% 0;
   background: rgba(255, 255, 255);
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in forwards;
   z-index: 2;
 }
 
