@@ -32,7 +32,7 @@
   </head>
   <body class="bg-white text-white font-dm">
     <!-- Header Section -->
-    <header id="header" class="z-10">
+    <header id="header" class="z-10 hidden lg:block">
       <nav
         class="py-[15px] px-[80px] flex justify-between items-center font-dm text-[18px] bg-blue"
       >
@@ -126,7 +126,7 @@
     <!-- Section 1: Landing -->
     <section
       id="sec1"
-      class="hero flex w-full justify-center py-24 border-b-2 md:border-b-0"
+      class="hero flex w-full justify-center py-24 border-b-2 lg:border-b-0"
     >
       <div
         class="sec1container flex flex-wrap justify-center flex-col items-center"
@@ -138,7 +138,7 @@
             src="./public/sjij-logo.svg"
             alt="Sheikh Jamal Innovation Grant
         Logo"
-            class="block md:h-[370px] scaleup"
+            class="block h-28 md:h-48 lg:h-[370px] scaleup"
             draggable="false"
             loading="lazy"
           />
@@ -152,7 +152,9 @@
       class="flex justify-center items-center py-10 text-black"
     >
       <!-- Container for content -->
-      <div class="content flex flex-col gap-5 justify-between mx-72 py-10">
+      <div
+        class="content flex flex-col gap-5 justify-between mx-4 md:mx-8 lg:mx-72 py-10"
+      >
         <div class="text-left text-[40px] font-normal font-square uppercase">
           SHEIKH JAMAL INNOVATION GRANT 2023 AT A GLANCE
         </div>
@@ -185,7 +187,9 @@
       class="flex flex-col justify-center items-center py-10 text-white"
     >
       <!-- Container for content -->
-      <div class="content flex flex-col gap-5 justify-between mx-72 py-10">
+      <div
+        class="content flex flex-col gap-5 justify-between mx-4 md:mx-8 lg:mx-72 py-10"
+      >
         <div class="text-left text-[40px] font-normal font-square uppercase">
           OBJECTIVE
         </div>
@@ -198,7 +202,9 @@
           prosperous Bangladesh.
         </div>
       </div>
-      <div class="content flex flex-col gap-5 justify-between mx-72 py-10">
+      <div
+        class="content flex flex-col gap-5 justify-between mx-4 md:mx-8 lg:mx-72 py-10"
+      >
         <div class="text-left text-[40px] font-normal font-square uppercase">
           ROADMAP
         </div>
@@ -229,7 +235,9 @@
       class="flex justify-center items-center py-10 text-black"
     >
       <!-- Container for content -->
-      <div class="content flex flex-col gap-5 justify-between mx-72 py-10">
+      <div
+        class="content flex flex-col gap-5 justify-between mx-4 md:mx-8 lg:mx-72 py-10"
+      >
         <div class="text-left text-[40px] font-normal font-square uppercase">
           WHO CAN APPLY?
         </div>
@@ -250,7 +258,9 @@
       class="flex justify-center items-center py-10 text-black"
     >
       <!-- Container for content -->
-      <div class="content flex flex-col gap-5 justify-between mx-72 py-10">
+      <div
+        class="content flex flex-col gap-5 justify-between mx-4 md:mx-8 lg:mx-72 py-10"
+      >
         <div class="text-left text-[40px] font-normal font-square uppercase">
           Selection Process and Steps
         </div>
@@ -278,7 +288,9 @@
     <!-- Section 7: TERMS AND CONDITIONS -->
     <section id="sec7" class="flex justify-center items-center py-10">
       <!-- Container for content -->
-      <div class="content flex flex-col gap-5 justify-between mx-72 py-10">
+      <div
+        class="content flex flex-col gap-5 justify-between mx-4 md:mx-8 lg:mx-72 py-10"
+      >
         <div class="text-left text-[40px] font-normal font-square uppercase">
           TERMS AND CONDITIONS
         </div>
@@ -357,7 +369,9 @@
       class="flex justify-center items-center py-10 text-black"
     >
       <!-- Container for content -->
-      <div class="content flex flex-col gap-5 justify-between mx-72 py-10">
+      <div
+        class="content flex flex-col gap-5 justify-between mx-4 md:mx-8 lg:mx-72 py-10"
+      >
         <div class="text-left text-[40px] font-normal font-square uppercase">
           PITCH DECK GUIDELINE
         </div>
@@ -432,10 +446,10 @@
     </section>
 
     <!-- Section 9 -->
-    <section id="sec9" class="flex justify-center items-center md:h-auto py-16">
+    <section id="sec9" class="flex justify-center items-center lg:h-auto py-16">
       <!-- Container for content with a flex layout -->
       <div
-        class="flex flex-col justify-center items-center w-full px-4 md:w-[836px]"
+        class="flex flex-col justify-center items-center w-full px-4 lg:w-[836px]"
       >
         <div
           class="font-bahn text-base mb-5 max-w-[602px] text-center px-[72px]"
@@ -448,7 +462,7 @@
           id="apply"
           href="./apply"
           target="_blank"
-          class="px-3 py-2 bg-emerald-900 bg-opacity-100 shadow-inner border border-white backdrop-blur-[10px] text-white text-xl md:text-2xl font-bold font-bahn uppercase"
+          class="px-3 py-2 bg-emerald-900 bg-opacity-100 shadow-inner border border-white backdrop-blur-[10px] text-white text-xl lg:text-2xl font-bold font-bahn uppercase"
         >
           Apply Now
         </a>
@@ -459,21 +473,21 @@
     <section class="bg-blue">
       <footer
         id="footer"
-        class="bg-green bg-opacity-30 flex flex-col justify-center items-center py-3 md:py-5"
+        class="bg-green bg-opacity-30 flex flex-col justify-center items-center py-3 lg:py-5"
       >
         <div
-          class="text-[18px] md:text-[40px] font-square font-bold pb-3 md:pb-5 uppercase tracking-[4px]"
+          class="text-[18px] md:text-2xl lg:text-[40px] font-square font-bold pb-3 lg:pb-5 uppercase tracking-[4px]"
         >
           Sheikh Jamal Innovation Grant
         </div>
-        <div class="flex gap-4 pb-3 md:pb-5">
+        <div class="flex gap-4 pb-3 lg:pb-5">
           <a href="https://www.facebook.com/drmcitclub" target="_blank">
             <img
               src="./public/fb_icon.svg"
               alt="Facebook Icon"
               draggable="false"
               loading="lazy"
-              class="h-[26px] md:h-auto"
+              class="h-[26px] lg:h-auto"
             />
           </a>
           <a href="https://www.instagram.com/drmcitclub" target="_blank">
@@ -482,7 +496,7 @@
               alt="Instagram Icon"
               draggable="false"
               loading="lazy"
-              class="h-[26px] md:h-auto"
+              class="h-[26px] lg:h-auto"
             />
           </a>
           <a
@@ -494,11 +508,11 @@
               alt="GitHub Icon"
               draggable="false"
               loading="lazy"
-              class="h-[26px] md:h-auto"
+              class="h-[26px] lg:h-auto"
             />
           </a>
         </div>
-        <div id="copyright" class="text-[7px] md:text-[10px]">
+        <div id="copyright" class="text-[7px] lg:text-[10px]">
           © Copyright
           <span class="font-bold uppercase">Sheikh Jamal Innovation Grant</span>
           . All Rights Reserved
@@ -511,7 +525,7 @@
         id="apply"
         href="./apply"
         target="_blank"
-        class="px-3 py-2 bg-emerald-900 bg-opacity-100 shadow-inner border border-white backdrop-blur-[10px] text-white text-xl md:text-2xl font-bold font-bahn uppercase"
+        class="px-3 py-2 bg-emerald-900 bg-opacity-100 shadow-inner border border-white backdrop-blur-[10px] text-white text-xl lg:text-2xl font-bold font-bahn uppercase"
       >
         Apply Now
       </a>

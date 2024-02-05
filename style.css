@@ -133,6 +133,21 @@ body {
   background-size: 500px, cover;
 }
 
+@media screen and (max-width: 1024px) {
+  #sec1 {
+    background-color: var(--blue);
+    background-image: none;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 500px, cover;
+  }
+
+  #sec9 {
+    background-color: var(--blue);
+    background-image: none;
+  }
+}
+
 #copyright {
   color: var(--green);
   opacity: 0.7;
