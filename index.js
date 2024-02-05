@@ -11,6 +11,23 @@ window.addEventListener("scroll", function () {
 });
 
 // navbar dropdown
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownToggle = document.getElementById("dropdownNavbarLink");
+  const dropdownMenu = document.getElementById("dropdownNavbar");
+
+  dropdownToggle.addEventListener("click", function () {
+    dropdownMenu.classList.toggle("hidden");
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menuToggle");
+  const navbarDropdown = document.getElementById("navbar-dropdown");
+
+  menuToggle.addEventListener("click", function () {
+    // Toggle the 'hidden' class on the menu
+    navbarDropdown.classList.toggle("hidden");
+  });
+});
 
 // Cursor
 function loadCursorScript() {

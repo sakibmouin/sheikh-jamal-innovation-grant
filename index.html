@@ -33,50 +33,209 @@
   <body class="bg-white text-white font-dm">
     <!-- Header Section -->
     <header id="header" class="z-10 hidden lg:block">
-      <nav
-        class="py-[15px] px-[80px] flex justify-between items-center font-dm text-[18px] bg-blue"
-      >
-        <div class="flex items-center">
-          <a href="https://drmcitclub.com/" target="_blank">
+      <nav class="bg-blue relative">
+        <div
+          class="py-[15px] mx-4 md:mx-8 lg:mx-20 flex flex-wrap items-center justify-between font-dm text-[18px]"
+        >
+          <a
+            href="https://drmcitclub.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
             <img
-              id="navbar-logo"
-              class="h-[70px] w-auto"
               src="./public/DITC_logo.png"
-              alt="Sheikh Jamal Innovation Grant
-          Logo"
+              class="h-14"
+              alt="DRMC IT Club
+            Logo"
             />
           </a>
-        </div>
-        <div class="menu-div list-none flex gap-5">
-          <a href="https://drmcitclub.com/">Home</a>
-
-          <a
-            href="/sheikh-jamal-innovation-grant"
-            class="active dropdown text-green"
-            >Innovation Grant</a
+          <button
+            id="menuToggle"
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
           >
-
-          <a href="https://drmcitclub.com/achievements">Achievements</a>
-
-          <a href="https://drmcitclub.com/gallery">Gallery</a>
-
-          <a href="https://drmcitclub.com/publications">Publications</a>
-
-          <a href="https://drmcitclub.com/events">Events</a>
-
-          <a href="https://drmcitclub.com/executives">Executives</a>
-
-          <a href="https://drmcitclub.com/contact">Contact us</a>
-        </div>
-        <div>
-          <a
-            id="apply"
-            href="./apply"
-            target="_blank"
-            class="px-3 py-2 bg-blue shadow-inner border border-green backdrop-blur-[10px] text-green text-xl font-bold font-dm uppercase"
-          >
-            Apply Now
-          </a>
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="https://drmcitclub.com/"
+                  class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="relative flex items-center justify-between w-full py-2 px-3 text-green hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  Innovation Grant
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="absolute top-full z-10 font-normal bg-blue divide-y divide-gray-100 shadow w-44 dark:divide-gray-600 bg-opacity-90 hidden"
+                >
+                  <ul
+                    class="py-2 text-sm text-white"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="https://sjig.drmcitclub.com/"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >About SJ Innovation Grant</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#sec2"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >At a Glance</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#sec3"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Objective</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#roadmap"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Roadmap</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#sec4"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Who Can Apply?</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#sps"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Selection Process and Steps</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#sec7"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Terms & Conditions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#sec8"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Pitch Deck Guideline</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                  href="https://drmcitclub.com/achievements"
+                  >Achievements</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                  href="https://drmcitclub.com/gallery"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                  href="https://drmcitclub.com/publications"
+                  >Publications</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                  href="https://drmcitclub.com/events"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                  href="https://drmcitclub.com/executives"
+                  >Executives</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                  href="https://drmcitclub.com/contact"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a
+              id="apply"
+              href="./apply"
+              target="_blank"
+              class="px-3 py-2 bg-blue shadow-inner border border-green backdrop-blur-[10px] text-green text-xl font-bold font-dm uppercase"
+            >
+              Apply Now
+            </a>
+          </div>
         </div>
       </nav>
     </header>
@@ -161,6 +320,7 @@
         </div>
       </div>
       <div
+        id="roadmap"
         class="content flex flex-col gap-5 justify-between mx-4 md:mx-8 lg:mx-72 py-10"
       >
         <div class="text-left text-[40px] font-normal font-square uppercase">
@@ -209,6 +369,7 @@
         </div>
       </div>
       <div
+        id="sps"
         class="content flex flex-col gap-5 justify-between mx-4 md:mx-8 lg:mx-72 py-10"
       >
         <div class="text-left text-[40px] font-normal font-square uppercase">
@@ -235,7 +396,6 @@
       </div>
     </section>
 
-    <!-- Section 6: Selection Process and Steps -->
     <!-- Section 7: TERMS AND CONDITIONS -->
     <section id="sec7" class="flex justify-center items-center py-10">
       <!-- Container for content -->
