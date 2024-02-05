@@ -9,6 +9,7 @@ module.exports = {
         white: "#FFFFFF",
         green2: "#35635C",
         green3: "#5D827C",
+        pale: "#38917A",
       },
     },
     fontFamily: {
