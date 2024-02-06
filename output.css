@@ -606,6 +606,14 @@ video {
   position: relative;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .top-3 {
   top: 0.75rem;
 }
@@ -624,6 +632,10 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.z-\[1000000\] {
+  z-index: 1000000;
 }
 
 .mx-4 {
@@ -1406,12 +1418,8 @@ nav * {
   cursor: auto !important;
 }
 
-#header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  /* Adjust the z-index based on your needs */
+.sticky {
+  position: sticky;
 }
 
 /* Add some padding to the body to prevent content from being hidden behind the navbar */

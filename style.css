@@ -154,11 +154,8 @@ nav * {
   cursor: auto !important;
 }
 
-#header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000; /* Adjust the z-index based on your needs */
+.sticky {
+  position: sticky;
 }
 
 /* Add some padding to the body to prevent content from being hidden behind the navbar */
