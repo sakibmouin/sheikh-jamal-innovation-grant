@@ -42,3 +42,5 @@ $(window).resize(checkScreenSizeAndLoadScript);
 $("img").on("contextmenu", function (e) {
   e.preventDefault();
 });
+
+// Typing Effect

@@ -1094,6 +1094,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1317,10 +1321,11 @@ body {
   }
 }
 
-/* @keyframes fadeIn {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -1330,7 +1335,7 @@ body {
   animation: fadeIn 1s ease-in forwards;
 }
 
-@keyframes slideUp {
+/* @keyframes slideUp {
   from {
     opacity: 0;
     transform: translateY(100%);
@@ -1364,19 +1369,10 @@ body {
 #drmc-logo,
 #sjig-logo {
   opacity: 0;
-}
+} */
 
 .logo-visible {
   opacity: 1;
-} */
-
-.ditc {
-  letter-spacing: -0.64px;
-}
-
-.presents {
-  transform: translateY(-10px);
-  font-weight: 100;
 }
 
 #sec1,
@@ -1737,6 +1733,11 @@ body * {
   .lg\:mx-72 {
     margin-left: 18rem;
     margin-right: 18rem;
+  }
+
+  .lg\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 
   .lg\:block {
