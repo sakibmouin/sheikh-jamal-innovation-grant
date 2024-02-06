@@ -447,11 +447,11 @@
       id="footer"
       class="bg-pale flex flex-col justify-center items-center py-3 lg:py-5"
     >
-      <div
+      <h2
         class="text-[18px] md:text-2xl lg:text-[40px] font-square font-bold pb-3 lg:pb-5 uppercase]"
       >
         Sheikh Jamal Innovation Grant
-      </div>
+      </h2>
       <div class="flex gap-4 pb-3 lg:pb-5 opacity-90">
         <a href="https://www.facebook.com/drmcitclub" target="_blank">
           <img
@@ -484,11 +484,11 @@
           />
         </a>
       </div>
-      <div id="copyright" class="text-white text-[7px] lg:text-[10px]">
+      <p id="copyright" class="text-white text-[7px] lg:text-[10px]">
         © Copyright
         <span class="font-bold uppercase">Sheikh Jamal Innovation Grant</span>
         . All Rights Reserved
-      </div>
+      </p>
     </footer>
 
     <!-- <div id="fixed">
@@ -528,5 +528,37 @@
       });
     </script>
     <script src="./index.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mohammadpur",
+            "addressRegion": "Dhaka",
+            "postalCode": "1207",
+            "addressCountry": "BD"
+          },
+          "name": "Dhaka Residential Model College"
+        },
+        "name": "Sheikh Jamal Innovation Grant",
+        <!-- "startDate": "2013-09-14T21:30", -->
+        "organizer": {
+          {
+            "@type": "Organization",
+            "name": "DRMC IT Club",
+            "url": "https://drmcitclub.com"
+          },
+          {
+            "@type": "Organization",
+            "name": "ICT Division",
+            "parentOrganization" : "Government of the People's Republic of Bangladesh",
+            "url": "https://ictd.gov.bd/"
+          }
+        }
+      }
+    </script>
   </body>
 </html>
