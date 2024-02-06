@@ -149,6 +149,16 @@ nav * {
   position: sticky;
 }
 
+@media (min-width: 1400px) {
+  .resp {
+    display: none;
+  }
+
+  .resp- {
+    display: block;
+  }
+}
+
 /* Add some padding to the body to prevent content from being hidden behind the navbar */
 body {
   padding-top: 64px; /* Adjust the padding-top based on your navbar height */
