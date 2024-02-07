@@ -40,10 +40,7 @@
   </head>
   <body class="bg-blue text-white font-bahn">
     <!-- Header Section -->
-    <nav
-      id="header"
-      class="bg-blue z-[1000000] hidden lg:block fixed top-0 left-0 w-full font-dm"
-    >
+    <nav id="header" class="bg-blue z-[1000000] fixed top-0 left-0 w-full">
       <div
         class="py-[15px] mx-4 md:mx-8 lg:mx-20 flex flex-wrap items-center justify-between text-[18px]"
       >
@@ -62,7 +59,7 @@
           id="menuToggle"
           data-collapse-toggle="navbar-dropdown"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg resp hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-dropdown"
           aria-expanded="false"
         >
@@ -83,7 +80,7 @@
             />
           </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <div class="hidden w-full resp- md:w-auto" id="navbar-dropdown">
           <ul
             class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
           >
@@ -121,7 +118,7 @@
               <!-- Dropdown menu -->
               <div
                 id="dropdownNavbar"
-                class="absolute top-full z-10 font-normal bg-blue divide-y divide-gray-100 shadow w-44 dark:divide-gray-600 bg-opacity-90 hidden"
+                class="absolute top-full z-10 font-normal bg-blue divide-y divide-gray-100 shadow w-44 dark:divide-gray-600 bg-opacity-90 hidden backdrop-blur-sm"
               >
                 <ul
                   class="py-2 text-sm text-white"
@@ -185,7 +182,7 @@
                   </li>
                   <li>
                     <a
-                      href="./apply"
+                      href="./apply.html"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >Apply now</a
                     >
@@ -243,10 +240,10 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="hidden resp-">
           <a
             id="apply"
-            href="./apply"
+            href="./apply.html"
             target="_blank"
             class="px-3 py-2 bg-blue shadow-inner border border-green backdrop-blur-[10px] text-green text-xl font-bold uppercase"
           >
@@ -262,16 +259,19 @@
         class="sec1container flex flex-wrap justify-center flex-col items-center"
       >
         <div class="text-center font-square">
-          <span class="text-[40px] font-normal uppercase"
+          <span class="text-xl md:text-3xl lg:text-[40px] font-normal uppercase"
             >Sheikh Jamal Innovation Grant</span
           ><span class="text-[40px] font-normal"> </span>
         </div>
         <div
-          class="font-bahn text-center text-[64px] font-semibold uppercase tracking-[7.68px]"
+          class="font-bahn text-center text-[28px] md:text-5xl lg:text-[64px] font-semibold uppercase tracking-[7.68px]"
         >
           Registration Form
         </div>
-        <div id="typing-anim" class="text-center text-2xl font-semibold">
+        <div
+          id="typing-anim"
+          class="text-center text-[15px] md:text-2xl lg:text-2xl font-semibold"
+        >
           Get Ready to Unleash Your
           <span class="text-teal-600"
             ><span class="typing-effect" id="typed"></span
@@ -282,12 +282,22 @@
 
     <section class="pb-32 mx-4 md:mx-8 lg:mx-16">
       <div id="formDiv">
+        <!-- <script type="text/javascript">
+          var submitted = false;
+        </script>
+        <iframe
+          name="hiddenConfirm"
+          id="hiddenConfirm"
+          style="display: none"
+          onload="if(submitted){window.location='./thankyoupage.html';}"
+        ></iframe> -->
         <form
           class="max-w-md mx-auto"
           action="https://docs.google.com/forms/d/e/1FAIpQLScBBVBcLiqu-L_afbzVIvaACXgyXHUd9HUiA4KMPO9NT6HdsA/formResponse"
-          target="_self"
+          target="hiddenConfirm"
           id="form"
           method="POST"
+          onsubmit="submitted=true"
         >
           <!-- <h2
             class="text-left text-[32px] font-normal font-square uppercase mb-3"
