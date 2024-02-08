@@ -653,6 +653,11 @@ video {
   margin-right: auto;
 }
 
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -683,6 +688,10 @@ video {
 
 .block {
   display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -737,6 +746,10 @@ video {
   height: 65px;
 }
 
+.h-\[70px\] {
+  height: 70px;
+}
+
 .h-\[90px\] {
   height: 90px;
 }
@@ -779,6 +792,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-\[255px\] {
+  max-width: 255px;
+}
+
+.max-w-\[344px\] {
+  max-width: 344px;
+}
+
+.max-w-\[565px\] {
+  max-width: 565px;
 }
 
 .max-w-\[602px\] {
@@ -830,8 +855,16 @@ video {
   flex-wrap: wrap;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -846,12 +879,20 @@ video {
   gap: 2.5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-\[53px\] {
@@ -923,6 +964,11 @@ video {
 .bg-emerald-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(6 78 59 / var(--tw-bg-opacity));
+}
+
+.bg-footerbg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 27 27 / var(--tw-bg-opacity));
 }
 
 .bg-gray-500 {
@@ -1064,6 +1110,26 @@ video {
   padding-bottom: 15px;
 }
 
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1074,6 +1140,14 @@ video {
 
 .pb-32 {
   padding-bottom: 8rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .pl-8 {
@@ -1239,6 +1313,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#00d9a6\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 217 166 / var(--tw-text-opacity));
+}
+
 .opacity-90 {
   opacity: 0.9;
 }
@@ -1304,12 +1383,8 @@ body {
   transform-style: preserve-3d;
 }
 
-/* .hero {
-  height: calc(100vh - 130px);
-} */
-
-/* #sjij-logo {
-  transform: translateY(-100px);
+/* #hero {
+  height: calc(100vh - 251px);
 } */
 
 @media (max-width: 767px) {
@@ -1386,13 +1461,6 @@ body {
   background-size: 100px, cover;
 }
 
-#sec7 {
-  background-image: url(./public/footer-bg.svg);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: 500px, cover;
-}
-
 @media screen and (max-width: 1024px) {
   #sec1 {
     background-color: var(--blue);
@@ -1401,17 +1469,21 @@ body {
     background-repeat: no-repeat;
     background-size: 500px, cover;
   }
-
-  #sec9 {
-    background-color: var(--blue);
-    background-image: none;
-  }
 }
+
+/* #footer {
+  background-image: url(https://drmcitclub.com/wp-content/uploads/Background-23.png);
+  background-position: bottom right;
+} */
 
 .sticky {
   position: sticky;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px);
+}
+
+#footerdiv1 {
+  border-bottom: 1.5px solid white;
 }
 
 @media (min-width: 1400px) {
@@ -1515,6 +1587,11 @@ body * {
 .hover\:text-green:hover {
   --tw-text-opacity: 1;
   color: rgb(56 145 122 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#00d9a6\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 217 166 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -1756,6 +1833,18 @@ body * {
     height: auto;
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
   .lg\:border-b-0 {
     border-bottom-width: 0px;
   }
@@ -1784,6 +1873,11 @@ body * {
 
   .lg\:text-\[64px\] {
     font-size: 64px;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 

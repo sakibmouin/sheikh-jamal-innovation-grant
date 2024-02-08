@@ -34,12 +34,8 @@ body {
   transform-style: preserve-3d;
 }
 
-/* .hero {
-  height: calc(100vh - 130px);
-} */
-
-/* #sjij-logo {
-  transform: translateY(-100px);
+/* #hero {
+  height: calc(100vh - 251px);
 } */
 
 @media (max-width: 767px) {
@@ -115,13 +111,6 @@ body {
   background-size: 100px, cover;
 }
 
-#sec7 {
-  background-image: url(./public/footer-bg.svg);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: 500px, cover;
-}
-
 @media screen and (max-width: 1024px) {
   #sec1 {
     background-color: var(--blue);
@@ -130,16 +119,20 @@ body {
     background-repeat: no-repeat;
     background-size: 500px, cover;
   }
-
-  #sec9 {
-    background-color: var(--blue);
-    background-image: none;
-  }
 }
+
+/* #footer {
+  background-image: url(https://drmcitclub.com/wp-content/uploads/Background-23.png);
+  background-position: bottom right;
+} */
 
 .sticky {
   position: sticky;
   backdrop-filter: saturate(180%) blur(20px);
+}
+
+#footerdiv1 {
+  border-bottom: 1.5px solid white;
 }
 
 @media (min-width: 1400px) {

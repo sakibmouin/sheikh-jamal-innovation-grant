@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./apply.html", "./form.html", "./index2.html"],
+  content: [
+    "./index.html",
+    "./apply.html",
+    "./form.html",
+    "./index2.html",
+    "./apply1.html",
+  ],
   theme: {
     extend: {
       colors: {
@@ -10,6 +16,7 @@ module.exports = {
         green2: "#35635C",
         green3: "#5D827C",
         pale: "#38917A",
+        footerbg: "#0D1B1B",
       },
     },
     fontFamily: {
