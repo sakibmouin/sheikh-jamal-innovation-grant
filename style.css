@@ -108,17 +108,14 @@ body {
 
 #sec1,
 #sec3,
-#sec5,
-#sec7 {
-  background-color: var(--blue);
+#sec5 {
   background-image: url(./public/triangle.png);
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 100px, cover;
 }
 
-#sec9 {
-  background-color: var(--blue);
+#sec7 {
   background-image: url(./public/footer-bg.svg);
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -140,13 +137,9 @@ body {
   }
 }
 
-nav,
-nav * {
-  cursor: auto !important;
-}
-
 .sticky {
   position: sticky;
+  backdrop-filter: saturate(180%) blur(20px);
 }
 
 @media (min-width: 1400px) {
@@ -157,11 +150,6 @@ nav * {
   .resp- {
     display: block;
   }
-}
-
-/* Add some padding to the body to prevent content from being hidden behind the navbar */
-body {
-  padding-top: 64px; /* Adjust the padding-top based on your navbar height */
 }
 
 #apply:hover {
@@ -233,9 +221,11 @@ body * {
   width: 8px;
   height: 8px;
   background-color: #eb3b23;
+  z-index: 1000000;
 }
 .cursor-dot-outline {
   width: 40px;
   height: 40px;
   background-color: #eb3a235a;
+  z-index: 1000000;
 }
