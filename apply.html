@@ -3,8 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
     <title>Sheikh Jamal Innovation Grant</title>
-    <link rel="stylesheet" href="output.css" />
+    <link rel="canonical" href="./index.html" />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://sjig.drmcitclub.net/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sheikh Jamal Innovation Grant" />
+    <meta
+      property="og:description"
+      content="Transform ideas into reality, seize opportunities, and pioneer change with Sheikh Jamal Innovation Grant. Apply Now!"
+    />
+    <meta
+      property="og:image"
+      content="https://drmcitclub.net/?attachment_id=3150"
+    />
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -25,16 +39,1042 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap"
       rel="stylesheet"
     />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./cursor.css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+      integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body class="bg-blue text-white font-bahn">
-    <section class="h-screen flex w-full justify-center py-32 px-4">
+    <!-- Header Section -->
+    <nav
+      id="header"
+      class="bg-blue z-[1000000] fixed top-0 left-0 w-full bg-opacity-65"
+    >
+      <div
+        class="py-[15px] mx-4 md:mx-8 lg:mx-20 flex flex-wrap items-center justify-between text-[18px]"
+      >
+        <a
+          href="https://drmcitclub.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src="./public/DITC_logo.png"
+            class="h-14"
+            alt="DRMC IT Club
+          Logo"
+          />
+        </a>
+        <button
+          id="menuToggle"
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg resp hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full resp- md:w-auto" id="navbar-dropdown">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="https://drmcitclub.com/"
+                class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="relative flex items-center justify-between w-full py-2 px-3 text-green hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+              >
+                Innovation Grant
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="absolute top-full z-10 font-normal bg-blue divide-y divide-gray-100 shadow w-44 dark:divide-gray-600 bg-opacity-90 hidden backdrop-blur-sm"
+              >
+                <ul
+                  class="py-2 text-sm text-white"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="https://sjig.drmcitclub.com/"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >About SJ Innovation Grant</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#sec2"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >At a Glance</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#sec3"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Objective</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#roadmap"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Roadmap</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#sec4"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Who Can Apply?</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#sps"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Selection Process and Steps</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#sec7"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#sec8"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Pitch Deck Guideline</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./apply.html"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Apply now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                aria-current="page"
+                href="https://drmcitclub.com/achievements"
+                >Achievements</a
+              >
+            </li>
+            <li>
+              <a
+                class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                aria-current="page"
+                href="https://drmcitclub.com/gallery"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                aria-current="page"
+                href="https://drmcitclub.com/events"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a
+                class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                aria-current="page"
+                href="https://drmcitclub.com/executives"
+                >Executives</a
+              >
+            </li>
+            <li>
+              <a
+                class="block py-2 px-3 text-white hover:text-green bg-blue-700 rounded md:bg-transparent md:p-0"
+                aria-current="page"
+                href="https://drmcitclub.com/contact"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="hidden resp-">
+          <a
+            href="#"
+            target="_blank"
+            class="bt px-3 py-2 bg-blue shadow-inner border border-green backdrop-blur-[10px] text-green text-xl font-bold"
+          >
+            Ongoing Event
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section 1: Landing -->
+    <section id="hero" class="h-auto flex w-full justify-center py-32 px-4">
       <div
         class="sec1container flex flex-wrap justify-center flex-col items-center"
       >
-        <h1 class="text-[20px] md:text-3xl lg:text-[40px] f font-normal">
-          Registration will begin soon...
-        </h1>
+        <div class="text-center font-square">
+          <span
+            class="text-[20px] md:text-3xl lg:text-[40px] font-normal uppercase"
+            >Sheikh Jamal Innovation Grant</span
+          ><span class="text-[40px] font-normal"> </span>
+        </div>
+        <div
+          class="font-bahn text-center text-[45px] md:text-5xl lg:text-[64px] font-semibold uppercase tracking-normal md:tracking-[7.68px]"
+        >
+          Registration Form
+        </div>
+        <div
+          id="typing-anim"
+          class="text-center text-[15px] md:text-2xl lg:text-2xl font-semibold"
+        >
+          Get Ready to Unleash Your
+          <span class="text-teal-600"
+            ><span class="typing-effect" id="typed"></span
+          ></span>
+        </div>
       </div>
     </section>
+
+    <section class="pb-32 mx-4 md:mx-8 lg:mx-16">
+      <div id="formDiv">
+        <!-- <script type="text/javascript">
+          var submitted = false;
+        </script>
+        <iframe
+          name="hiddenConfirm"
+          id="hiddenConfirm"
+          style="display: none"
+          onload="if(submitted){window.location='./thankyoupage.html';}"
+        ></iframe> -->
+        <form
+          class="max-w-md mx-auto"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSdAOQmQ5LJx4C5w0xthBdkKB2ZkLjTzWZ8tMGTwHIs9LCs_Vw/formResponse"
+          target="hiddenConfirm"
+          id="form"
+          method="POST"
+          onsubmit="submitted=true"
+        >
+          <!-- <h2
+            class="text-left text-[32px] font-normal font-square uppercase mb-3"
+          >
+            Registration Form
+          </h2> -->
+          <div class="relative z-0 w-full mb-5 group">
+            <h3 class="text-2xl">General Information About Submitter</h3>
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              id="1017837283"
+              type="text"
+              name="entry.1017837283"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="1982357456"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Full Name</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              id="379156546"
+              name="entry.379156546"
+              type="email"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="1659481081"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Email Address</label
+            >
+          </div>
+          <!-- <div class="grid md:grid-cols-2 md:gap-6"></div> -->
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="tel"
+              pattern="[0-9]{11}"
+              id="193083530"
+              name="entry.193083530"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="996512674"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Contact Number (017XXXXXXXX)</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              id="758256096"
+              type="text"
+              name="entry.758256096"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="2075976370"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Nationality</label
+            >
+          </div>
+
+          <div
+            class="relative z-0 w-full mb-5 group"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            <input
+              id="804563912"
+              type="text"
+              name="entry.804563912"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="1803477377"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Age</label
+            >
+          </div>
+
+          <div
+            class="relative z-0 w-full mb-5 group"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            <input
+              id="654480557"
+              type="text"
+              name="entry.654480557"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="589199116"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Role in Startup</label
+            >
+          </div>
+          <div class="relative z-0 w-full mt-10 mb-5 group">
+            <h3 class="text-2xl">Team Members</h3>
+            <p>
+              Please provide information about any other individuals involved in
+              this project. If there are no other team members, please leave
+              this section empty.
+            </p>
+          </div>
+
+          <div
+            class="relative z-0 w-full mb-5 group"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            <input
+              id="1601289183"
+              type="text"
+              name="entry.1601289183"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="1959683121"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >2nd Participant&#x27;s Name</label
+            >
+          </div>
+
+          <div
+            class="relative z-0 w-full mb-5 group"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            <input
+              id="744474731"
+              type="text"
+              name="entry.744474731"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="1016267673"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >2nd Participant&#x27;s Contact Number</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              id="1098463536"
+              type="email"
+              name="entry.1098463536"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="1903305469"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >2nd Participant&#x27;s Email Address</label
+            >
+          </div>
+
+          <div
+            class="relative z-0 w-full mb-5 group"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            <input
+              id="1630101312"
+              type="text"
+              name="entry.1630101312"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="227230645"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >3rd Participant&#x27;s Name</label
+            >
+          </div>
+
+          <div
+            class="relative z-0 w-full mb-5 group"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            <input
+              id="1705971436"
+              type="text"
+              name="entry.1705971436"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="1908101458"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >3rd Participant&#x27;s Contact Number</label
+            >
+          </div>
+
+          <div
+            class="relative z-0 w-full mb-5 group"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            <input
+              id="2132802696"
+              type="email"
+              name="entry.2132802696"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="1735930126"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >3rd Participant&#x27;s Email Address</label
+            >
+          </div>
+          <div class="relative z-0 w-full mt-10 mb-5 group">
+            <h3 class="text-2xl">Startup Information</h3>
+            <p>Please provide all the information about your startup.</p>
+          </div>
+
+          <div
+            class="relative z-0 w-full mb-5 group"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            <input
+              id="1019217640"
+              type="text"
+              name="entry.1019217640"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="42565419"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Startup&#x27;s Name</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              id="1055338667"
+              type="text"
+              name="entry.1055338667"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="773420391"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Startup&#x27;s Website</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              id="1711435681"
+              type="text"
+              name="entry.1711435681"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="1262188250"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Link of Logo of Your Startup</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              id="1830082999"
+              type="text"
+              name="entry.1830082999"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="37812173"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Location of Workspace</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              id="730726115"
+              type="text"
+              name="entry.730726115"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="2099751334"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Industry/Niche</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              id="1548642315"
+              type="text"
+              name="entry.1548642315"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="532139247"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Brief Description of Your Startup</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              id="381829187"
+              type="text"
+              name="entry.381829187"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="377350852"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Business Model</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              id="1838079453"
+              type="text"
+              name="entry.1838079453"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="785939994"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Market Need/Problem</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-8 group">
+            <input
+              id="680231635"
+              type="text"
+              name="entry.680231635"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="268260075"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Target Market:</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-12 group">
+            <select
+              id="1689315122"
+              name="entry.1620188743"
+              class="block py-2.5 px-0 w-full text-sm text-white bg-blue border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              required
+            >
+              <option value="" disabled selected>Not Selected</option>
+              <option value="Idea">Idea</option>
+              <option value="Early Stage">Early Stage</option>
+              <option value="Prototype">Prototype</option>
+              <option value="Generating Revenue">Generating Revenue</option>
+            </select>
+            <label
+              for="1689315122"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-7 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
+              >Stage of Development</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-12 group">
+            <input
+              id="2094881114"
+              type="text"
+              name="entry.2094881114"
+              class="toggle block pt-2.5 pb-7 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="1169937764"
+              class="toggle peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-9"
+              >From which year you or your team is working in this project or
+              startup?</label
+            >
+          </div>
+
+          <!-- Field type: "paragraph" id: "640431571" -->
+          <div class="relative z-0 w-full mb-12 group">
+            <textarea
+              id="1684542378"
+              name="entry.1684542378"
+              type="text"
+              class="toggle block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            ></textarea>
+            <label
+              for="640431571"
+              class="toggle peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-9"
+              >What is the future plan of yours with this project or
+              startup?</label
+            >
+          </div>
+
+          <!-- Field type: "paragraph" id: "282231919" -->
+          <div class="relative z-0 w-full mb-12 group">
+            <textarea
+              id="1610028470"
+              name="entry.1610028470"
+              type="text"
+              class="toggle block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            ></textarea>
+            <label
+              for="282231919"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-12"
+              >What is the working plan of yours in next six month? (give links
+              of datasheet, working paper, pictures or any other proof)</label
+            >
+          </div>
+
+          <!-- Field type: "paragraph" id: "63690501" -->
+          <div class="relative z-0 w-full mb-12 group">
+            <textarea
+              id="1922278107"
+              name="entry.1922278107"
+              type="text"
+              class="toggle block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            ></textarea>
+            <label
+              for="63690501"
+              class="toggle peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-12"
+              >How much work you have done till now? (give links of datasheet,
+              working paper, pictures or any other proof)</label
+            >
+          </div>
+
+          <!-- Field type: "paragraph" id: "1276602704" -->
+          <div class="relative z-0 w-full mb-12 group">
+            <textarea
+              id="1735274338"
+              name="entry.1735274338"
+              type="text"
+              class="toggle block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            ></textarea>
+            <label
+              for="1276602704"
+              class="toggle peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-12"
+              >Why do you think yourself as the worthy participant for this
+              prize? (write at least 250 words)</label
+            >
+          </div>
+
+          <!-- Field type: "paragraph" id: "998583568" -->
+          <div class="relative z-0 w-full mb-12 group">
+            <textarea
+              id="1323216127"
+              name="entry.1323216127"
+              type="text"
+              class="toggle block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            ></textarea>
+            <label
+              for="998583568"
+              class="toggle peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-12"
+              >What role your startup will play in the future of Bangladesh to
+              make it smart Bangladesh in 2041? (250 words)</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-8 group">
+            <input
+              id="1655857879"
+              type="text"
+              name="entry.1655857879"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="1655857879"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Pitch Deck Link</label
+            >
+          </div>
+
+          <input type="hidden" name="fvv" value="1" />
+          <input type="hidden" name="fbzx" value="-8619192944927642080" />
+          <input type="hidden" name="pageHistory" value="0" />
+          <button
+            type="submit"
+            value="submit"
+            class="bt px-3 py-2 bg-blue shadow-inner border border-green backdrop-blur-[10px] text-green text-xl"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer
+      id="footer"
+      class="bg-footerbg flex flex-col justify-between items-center gap-8 px-10 py-3 lg:py-5"
+    >
+      <div
+        id="footerdiv1"
+        class="w-full flex flex-col lg:flex-row justify-start lg:justify-between items-start py-14"
+      >
+        <div class="max-w-[344px]">
+          <a
+            href="https://drmcitclub.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse pb-5"
+          >
+            <img
+              src="./public/DITC_logo.png"
+              class="h-[70px]"
+              alt="DRMC IT Club
+            Logo"
+            />
+          </a>
+          <p>
+            The purpose of DRMC IT CLUB shall be to serve and enrich the
+            knowledge of the passionate and tech savvy students .
+          </p>
+        </div>
+        <div class="max-w-[255px]">
+          <h5 class="text-[#00d9a6] text-2xl font-bold pb-6">Links</h5>
+          <ul class="flex flex-col gap-3">
+            <li>
+              <a
+                class="hover:text-[#00d9a6]"
+                href="https://drmcitclub.com/"
+                target="_blank"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#00d9a6]"
+                href="https://drmcitclub.com/"
+                target="_blank"
+                >Achivements</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#00d9a6]"
+                href="https://drmcitclub.com/contact-us/"
+                target="_blank"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="max-w-[255px]">
+          <h5 class="text-[#00d9a6] text-2xl font-bold pb-6">Links</h5>
+          <ul class="flex flex-col gap-3">
+            <li>
+              <a
+                class="hover:text-[#00d9a6]"
+                href="https://drmcitclub.com/events/"
+                target="_blank"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#00d9a6]"
+                href="https://drmcitclub.com/gallery/"
+                target="_blank"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#00d9a6]"
+                href="https://drmcitclub.com/executives-panel-2024/"
+                target="_blank"
+                >Executives</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="max-w-[565px]">
+          <h5 class="text-[#00d9a6] text-2xl font-bold pb-6">Contact Info</h5>
+          <ul class="flex flex-col gap-3">
+            <li>
+              2nd Floor, Academic Building 3, Dhaka Residential Model College,
+              Mirpur Road, Mohammadpur, Dhaka 1207, Bangladesh
+            </li>
+            <li>+880 1880830398</li>
+            <li>+880 1774259991</li>
+            <li>
+              <a
+                class="hover:text-[#00d9a6]"
+                href="mailto:contact@drmcitclub.com"
+                target="_blank"
+                >contact@drmcitclub.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#00d9a6]"
+                href="mailto:officials@drmcitclub.com"
+                target="_blank"
+                >officials@drmcitclub.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="w-full flex flex-col lg:flex-row justify-start lg:justify-between items-center gap-4 pb-3 opacity-90"
+      >
+        <div class="flex gap-4 opacity-90">
+          <a href="https://www.facebook.com/drmcitclub" target="_blank">
+            <img
+              src="./public/fb_icon.svg"
+              alt="Facebook Icon"
+              draggable="false"
+              loading="lazy"
+              class="h-[26px] lg:h-auto"
+            />
+          </a>
+          <a href="https://www.instagram.com/drmcitclub" target="_blank">
+            <img
+              src="./public/insta_icon.svg"
+              alt="Instagram Icon"
+              draggable="false"
+              loading="lazy"
+              class="h-[26px] lg:h-auto"
+            />
+          </a>
+          <a
+            href="https://github.com/sakibmouin/sheikh-jamal-innovation-grant"
+            target="_blank"
+          >
+            <img
+              src="./public/github_icon.svg"
+              alt="GitHub Icon"
+              draggable="false"
+              loading="lazy"
+              class="h-[26px] lg:h-auto"
+            />
+          </a>
+        </div>
+        <div class="flex justify-center items-center">
+          <p id="copyright" class="text-white text-[7px] lg:text-base">
+            © Copyright
+            <span class="text-green font-bold uppercase"
+              >Sheikh Jamal Innovation Grant</span
+            >
+            . All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div id="fixed">
+      <a
+        id="apply"
+        href="./apply"
+        target="_blank"
+        class="px-3 py-2 bg-emerald-900 bg-opacity-100 shadow-inner border border-white backdrop-blur-[10px] text-white text-xl md:text-2xl font-bold uppercase"
+      >
+        Apply Now
+      </a>
+    </div> -->
+
+    <!-- Cursor -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- SCRIPTS -->
+
+    <script>
+      const typed = new Typed("#typed", {
+        strings: [
+          "Innovation!",
+          "Creativity!",
+          "Progress!",
+          "Excellence!",
+          "Vision!",
+          "Resilience!",
+        ],
+        typeSpeed: 100,
+        backSpeed: 150,
+        backDelay: 2000,
+        loop: true,
+      });
+    </script>
+    <!-- <script>
+      $("#form").submit(function (event) {
+        event.preventDefault();
+        var extraData = {};
+        $("form").ajaxSubmit({
+          data: extraData,
+          dataType: "jsonp",
+          error: function () {
+            alert("Form Submitted. Thanks.");
+            // window.location = './thankyoupage.html'
+          },
+        });
+      });
+    </script> -->
+    <script src="./index.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mohammadpur",
+            "addressRegion": "Dhaka",
+            "postalCode": "1207",
+            "addressCountry": "BD"
+          },
+          "name": "Dhaka Residential Model College"
+        },
+        "name": "Sheikh Jamal Innovation Grant",
+        <!-- "startDate": "2013-09-14T21:30", -->
+        "organizer": {
+          {
+            "@type": "Organization",
+            "name": "DRMC IT Club",
+            "url": "https://drmcitclub.net"
+          },
+          {
+            "@type": "Organization",
+            "name": "ICT Division",
+            "parentOrganization" : "Government of the People's Republic of Bangladesh",
+            "url": "https://ictd.gov.bd/"
+          }
+        }
+      }
+    </script>
   </body>
 </html>
