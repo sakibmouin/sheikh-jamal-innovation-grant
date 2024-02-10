@@ -121,10 +121,10 @@ body {
   }
 }
 
-/* #footer {
-  background-image: url(https://drmcitclub.com/wp-content/uploads/Background-23.png);
-  background-position: bottom right;
-} */
+#footer {
+  background-image: url(./public/footer-bg.webp);
+  background-position: center right;
+}
 
 .sticky {
   position: sticky;
@@ -145,7 +145,7 @@ body {
   }
 }
 
-#apply:hover {
+.bt:hover {
   transition: all 0.2s ease-in forwards-out !important;
   border: 1px solid #0c443b !important;
   background: #0c443b !important;
