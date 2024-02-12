@@ -303,10 +303,10 @@
 
     <section class="pb-32 mx-4 md:mx-8 lg:mx-16">
       <div id="formDiv">
-        <!-- <script type="text/javascript">
+        <script type="text/javascript">
           var submitted = false;
         </script>
-        <iframe
+        <!-- <iframe
           name="hiddenConfirm"
           id="hiddenConfirm"
           style="display: none"
@@ -318,7 +318,7 @@
           target="hiddenConfirm"
           id="form"
           method="POST"
-          onsubmit="submitted=true"
+          onsubmit="submitted=true;if(!document.getElementById('default-checkbox').checked) { return false; };"
         >
           <!-- <h2
             class="text-left text-[32px] font-normal font-square uppercase mb-3"
