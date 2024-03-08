@@ -1,6 +1,6 @@
 # Sheikh Jamal Innovation Grant Website
 
-[Live URL for Sheikh Jamal Innovation Grant](https://sakibmouin.github.io/sheikh-jamal-innovation-grant/)
+[Live URL for Sheikh Jamal Innovation Grant](https://sjig.drmcitclub.com/)
 
 ## Overview
 
