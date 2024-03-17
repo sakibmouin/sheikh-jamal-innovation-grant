@@ -5,33 +5,33 @@
 @import url("https://db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift");
 
 @font-face {
-  font-family: "SquareFont";
-  src: url("./fonts/squarefont/SquareFont.ttf.woff") format("woff"),
-    url("./fonts/squarefont/SquareFont.ttf.svg#SquareFont") format("svg"),
-    url("./fonts/squarefont/SquareFont.ttf.eot"),
-    url("./fonts/squarefont/SquareFont.ttf.eot?#iefix")
-      format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "SquareFont";
+	src: url("./fonts/squarefont/SquareFont.ttf.woff") format("woff"),
+		url("./fonts/squarefont/SquareFont.ttf.svg#SquareFont") format("svg"),
+		url("./fonts/squarefont/SquareFont.ttf.eot"),
+		url("./fonts/squarefont/SquareFont.ttf.eot?#iefix")
+			format("embedded-opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 :root {
-  --blue: #181e25;
-  --green: #38917a;
-  --white: #ffffff;
-  --green2: #35635c;
-  --green3: #5d827c;
-  --pale: #38917a;
+	--blue: #181e25;
+	--green: #38917a;
+	--white: #ffffff;
+	--green2: #35635c;
+	--green3: #5d827c;
+	--pale: #38917a;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  cursor: default;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
+	cursor: default;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
 }
 
 /* #hero {
@@ -39,27 +39,27 @@ body {
 } */
 
 @media (max-width: 767px) {
-  body {
-    cursor: default;
-  }
+	body {
+		cursor: default;
+	}
 
-  cursor-dot-outline,
-  cursor-dot {
-    display: none;
-  }
+	cursor-dot-outline,
+	cursor-dot {
+		display: none;
+	}
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .fadein {
-  animation: fadeIn 1s ease-in forwards;
+	animation: fadeIn 1s ease-in forwards;
 }
 
 /* @keyframes slideUp {
@@ -99,58 +99,58 @@ body {
 } */
 
 .logo-visible {
-  opacity: 1;
+	opacity: 1;
 }
 
 #sec1,
 #sec3,
 #sec5 {
-  background-image: url(./public/triangle.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: 100px, cover;
+	background-image: url(./public/triangle.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100px, cover;
 }
 
 @media screen and (max-width: 1024px) {
-  #sec1 {
-    background-color: var(--blue);
-    background-image: none;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: 500px, cover;
-  }
+	#sec1 {
+		background-color: var(--blue);
+		background-image: none;
+		background-position: bottom right;
+		background-repeat: no-repeat;
+		background-size: 500px, cover;
+	}
 }
 
 #footer {
-  background-image: url(./public/footer-bg.webp);
-  background-position: center right;
+	background-image: url(./public/footer-bg.webp);
+	background-position: center right;
 }
 
 .sticky {
-  position: sticky;
-  backdrop-filter: saturate(180%) blur(20px);
+	position: sticky;
+	backdrop-filter: saturate(180%) blur(20px);
 }
 
 #footerdiv1 {
-  border-bottom: 1.5px solid white;
+	border-bottom: 1.5px solid white;
 }
 
 @media (min-width: 1400px) {
-  .resp {
-    display: none;
-  }
+	.resp {
+		display: none;
+	}
 
-  .resp- {
-    display: block;
-  }
+	.resp- {
+		display: block;
+	}
 }
 
 .bt:hover {
-  transition: all 0.2s ease-in forwards-out !important;
-  border: 1px solid #0c443b !important;
-  background: #0c443b !important;
-  box-shadow: 0px 0px 7.6px 0px #061d20 inset !important;
-  backdrop-filter: blur(5px) !important;
+	transition: all 0.2s ease-in forwards-out !important;
+	border: 1px solid #0c443b !important;
+	background: #0c443b !important;
+	box-shadow: 0px 0px 7.6px 0px #061d20 inset !important;
+	backdrop-filter: blur(5px) !important;
 }
 
 /* #fixed {
@@ -160,15 +160,15 @@ body {
 } */
 
 #arrows {
-  transform: translateY(-55px);
+	transform: translateY(-55px);
 }
 
 section div img {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 prizes-div {
-  align-self: center;
+	align-self: center;
 }
 
 /* APPLY PAGE */
@@ -180,11 +180,11 @@ prizes-div {
 } */
 
 ol {
-  list-style-type: decimal;
+	list-style-type: decimal;
 }
 
 .hero-bg {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 /* .footer {
@@ -196,29 +196,29 @@ html,
 body,
 html *,
 body * {
-  cursor: none;
+	cursor: none;
 }
 .cursor-dot,
 .cursor-dot-outline {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  mix-blend-mode: difference;
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	opacity: 0;
+	transform: translate(-50%, -50%);
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+	mix-blend-mode: difference;
 }
 .cursor-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #eb3b23;
-  z-index: 1000000;
+	width: 8px;
+	height: 8px;
+	background-color: #eb3b23;
+	z-index: 1000000;
 }
 .cursor-dot-outline {
-  width: 40px;
-  height: 40px;
-  background-color: #eb3a235a;
-  z-index: 1000000;
+	width: 40px;
+	height: 40px;
+	background-color: #eb3a235a;
+	z-index: 1000000;
 }
