@@ -6,6 +6,7 @@ module.exports = {
 		"./form.html",
 		"./index2.html",
 		"./apply1.html",
+		"./success.html",
 	],
 	theme: {
 		extend: {
